@@ -6,6 +6,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'jacoco'
+    id 'com.google.protobuf' version '0.8.18' apply false
 }
 apply from: "${scriptDir}/spotless.gradle"
 //apply from: "${scriptDir}/jacoco.gradle"

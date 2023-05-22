@@ -34,7 +34,10 @@ dependencies {
         exclude group: 'io.opentelemetry', module: 'opentelemetry-semconv'
         exclude group: 'io.opentelemetry', module: 'opentelemetry-sdk-extension-autoconfigure'
         exclude group: 'io.opentelemetry', module: 'opentelemetry-sdk-extension-resources'
+    }
 
+    implementation (project(':jaeger-remote-sampler')) {
+        exclude group: 'io.opentelemetry', module: 'opentelemetry-api'
     }
 
 }

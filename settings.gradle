@@ -13,4 +13,5 @@ include 'lm-javaagent-layer'
 include 'custom'
 include 'lm-agent:bootstrap'
 findProject(':lm-agent:bootstrap')?.name = 'bootstrap'
+include 'jaeger-remote-sampler'
 

@@ -1,0 +1,11 @@
+// protobuf
+apply plugin: 'java'
+apply plugin: 'com.google.protobuf'
+
+sourceSets.main.java.srcDirs += ['${buildDir}/generated/src/java/']
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.21.5'
+    }
+}
